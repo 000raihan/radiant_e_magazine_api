@@ -10,21 +10,24 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
     <script>
-      const pageFlip = new St.PageFlip(document.getElementById("demoBookExample"), {
-        width: 550, // base page width
-            height: 733, // base page height
+      const pageFlip = new St.PageFlip(
+        document.getElementById("demoBookExample"),
+        {
+          width: 550, // base page width
+          height: 733, // base page height
 
-            size: "stretch",
-            // set threshold values:
-            minWidth: 315,
-            maxWidth: 1000,
-            minHeight: 420,
-            maxHeight: 1350,
+          size: "stretch",
+          // set threshold values:
+          minWidth: 315,
+          maxWidth: 1000,
+          minHeight: 420,
+          maxHeight: 1350,
 
-            maxShadowOpacity: 0.5, // Half shadow intensity
-            showCover: true,
-            mobileScrollSupport: false // disable content scrolling on mobile de
-      });
+          maxShadowOpacity: 0.5, // Half shadow intensity
+          showCover: true,
+          mobileScrollSupport: false, // disable content scrolling on mobile de
+        }
+      );
       document.addEventListener("DOMContentLoaded", function () {
         const pageFlip = new St.PageFlip(
           document.getElementById("demoBookExample"),
@@ -79,369 +82,367 @@
     </script>
   </head>
   <body>
-    <section class="container">
-      <div class="container">
-        <h5 style="margin-top:1rem; text-align: center; color: #618C78; font-weight: 700; font-size: 2rem;">Chronicle </h5>
-        <h5 style="margin-bottom:2rem; text-align: center;">February- April 2022</h5>
-        <div class="content" style="margin-top: 0rem;">
-          <div class="container">
-            <!-- <div>
-              <button type="button" class="btn-prev">Previous page</button>
-              [<span class="page-current">1</span> of
-              <span class="page-total">-</span>]
-              <button type="button" class="btn-next">Next page</button>
-            </div> -->
-
-            <!-- <div>
-              State: <i class="page-state">read</i>, orientation:
-              <i class="page-orientation">landscape</i>
-            </div> -->
-          </div>
-
-          <div class="container">
-            <div class="flip-book" id="demoBookExample">
-              <!-- <div class="page page-cover page-cover-top" data-density="hard">
+    <div class="container">
+      <h5
+        style="
+          margin-top: 1rem;
+          text-align: center;
+          color: #618c78;
+          font-weight: 700;
+          font-size: 2rem;
+        "
+      >
+      Chronicle
+      </h5>
+      <h5 style="margin-bottom: 2rem; text-align: center">
+        February- April 2022
+      </h5>
+      <div
+        class="content"
+        style="
+          margin-top: 0rem;
+          margin-bottom: 2rem;
+          display: flex;
+          justify-content: center;
+        "
+      >
+        <div class="flip-book" id="demoBookExample">
+          <!-- <div class="page page-cover page-cover-top" data-density="hard">
                 <div class="page-content">
                   <h2>Radiant Magazine 2022</h2>
                 </div>
               </div> -->
-              <!-- PAGES .... -->
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-01.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-02.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-03.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-04.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-05.jpg)"
-                  ></div>
-                </div>
-              </div>
-
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-06.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-07.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-08.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-09.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-10.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-11.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-12.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-13.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-14.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-15.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-16.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-17.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-18.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-19.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-20.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-21.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-22.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-23.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-24.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-25.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-26.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-27.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-28.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-29.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-30.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-31.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-32.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-33.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-34.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-35.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-36.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-37.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-38.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-39.jpg)"
-                  ></div>
-                </div>
-              </div>
-              <div class="page">
-                <div class="page-content">
-                  <div
-                    class="page-image"
-                    style="background-image: url(images/2022_1/Cronical-11-40.jpg)"
-                  ></div>
-                </div>
-              </div>
-
-
+          <!-- PAGES .... -->
+          <div class="page">
+            <div class="page-content">
               <div
-                class="page page-cover page-cover-bottom"
-                data-density="hard"
-              >
-                <div class="page-content">
-                  <h2>THE END</h2>
-                </div>
-              </div>
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-01.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-02.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-03.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-04.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-05.jpg)"
+              ></div>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-06.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-07.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-08.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-09.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-10.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-11.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-12.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-13.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-14.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-15.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-16.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-17.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-18.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-19.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-20.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-21.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-22.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-23.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-24.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-25.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-26.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-27.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-28.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-29.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-30.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-31.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-32.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-33.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-34.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-35.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-36.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-37.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-38.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-39.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+              <div
+                class="page-image"
+                style="background-image: url(images/2022_1/Cronical-11-40.jpg)"
+              ></div>
+            </div>
+          </div>
+
+          <div class="page page-cover page-cover-bottom" data-density="hard">
+            <div class="page-content">
+              <h2>THE END</h2>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- <script src="../js/main.js">
       alert("Hello")
     </script> -->

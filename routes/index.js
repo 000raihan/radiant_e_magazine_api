@@ -21,7 +21,7 @@ const magazine_list = [
 ]
 
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Radiant Chronicale', magazine_list:magazine_list});
+  res.render('index', { title: 'Radiant Chronicle', magazine_list:magazine_list});
 });
 router.get('/magazine2022_february', function (req, res, next) {
   res.render('magazine_details_february');
