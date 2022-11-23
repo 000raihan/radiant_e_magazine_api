@@ -12,10 +12,10 @@
             <div class="row">
 
               <% magazine_list.map(item=>{%>
-                <div class="col-12 col-lg-4 mt-4 mt-lg-0" style="height:100%;">
+                <div class="col-12 col-lg-4 mt-4 mt-lg-0">
                   <a href= '<%=item.url %>' >
                     <div class="card">
-                      <img style="width:100%;" src=<%= item.thumb %> ></img>
+                      <img style="height:23rem;width: 100%; object-fit: contain;" src=<%= item.thumb %> ></img>
                       
                       <h4 style="color: #009EAA; font-weight: 700; text-align: center;" class="card-title"><%= item.title %></h4>
                       <p style="font-size:1rem;margin-top: -.5rem; text-align: center;" class="card-text p-y-1">
@@ -23,25 +23,9 @@
                       </p>
                       </a>
                     </div>
-                      
                 </div>
             <%})%>
 
-              <!-- <% for (item of magazine_list) { %>
-               <div class="col-6">
-                <a href= '<%=item.url %>' >
-                  <div class="card" style="width:50%;">
-                  
-                      <img style="width:100%;" src=<%= item.thumb %> ></img>
-                      <h4 style="color: #009EAA; font-weight: 700;" class="card-title"><%= item.title %></h4>
-                      <p style="font-size:1rem;margin-top: -.5rem;" class="card-text p-y-1">
-                        <%= item.sub_title %>
-                      </p>
-                
-                </a>
-              </div>
-              <% } %> -->
-            <!-- </div> -->
       </div>
     </div>
   </body>
