@@ -3,41 +3,46 @@
   <head>
     <title><%= title %></title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
-    <section class="container">
-      <div class="container-fostrap">
-        <h1 style="margin-bottom: 5rem; margin-top: 3rem"><%= title %></h1>
-        <div class="content">
-          <div class="container">
+    <div class="container">
+        <h1 style="margin-bottom:2rem; margin-top:2rem"><%= title %></h1>
+
             <div class="row">
-              <% for (item of magazine_list) { %>
-              <div class="col-md-4">
+
+              <% magazine_list.map(item=>{%>
+                <div class="col-12 col-lg-4 mt-4 mt-lg-0" style="height:100%;">
+                  <a href= '<%=item.url %>' >
+                    <div class="card">
+                      <img style="width:100%;" src=<%= item.thumb %> ></img>
+                      
+                      <h4 style="color: #009EAA; font-weight: 700; text-align: center;" class="card-title"><%= item.title %></h4>
+                      <p style="font-size:1rem;margin-top: -.5rem; text-align: center;" class="card-text p-y-1">
+                        <%= item.sub_title %>
+                      </p>
+                      </a>
+                    </div>
+                      
+                </div>
+            <%})%>
+
+              <!-- <% for (item of magazine_list) { %>
+               <div class="col-6">
                 <a href= '<%=item.url %>' >
-                  <div class="card">
-                    <div class="card-block">
-                      <img style="width:100%; height: 100%;" src=<%= item.thumb %> ></img>
+                  <div class="card" style="width:50%;">
+                  
+                      <img style="width:100%;" src=<%= item.thumb %> ></img>
                       <h4 style="color: #009EAA; font-weight: 700;" class="card-title"><%= item.title %></h4>
                       <p style="font-size:1rem;margin-top: -.5rem;" class="card-text p-y-1">
                         <%= item.sub_title %>
                       </p>
-                    </div>
-                  </div>
+                
                 </a>
               </div>
-              <% } %>
-            </div>
-          </div>
-        </div>
+              <% } %> -->
+            <!-- </div> -->
       </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
   </body>
 </html>
