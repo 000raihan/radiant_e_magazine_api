@@ -9,7 +9,7 @@ const magazine_list = [
     url:`${base_url}/magazine2022_february`,
     thumb:"images/2022_1/Cronical-11-01.jpg",
     title: "Chronicle",
-    sub_title: "CFebruary- April 2022"
+    sub_title: "February- April 2022"
   },
   {
     id:3,
