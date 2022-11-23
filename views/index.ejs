@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="container-fostrap">
+        <h1 style="margin-bottom: 5rem; margin-top: 3rem"><%= title %></h1>
+        <div class="content">
+          <div class="container">
+            <div class="row">
+              <% for (item of magazine_list) { %>
+              <div class="col-md-4">
+                <a href= '<%=item.url %>' >
+                  <div class="card">
+                    <div class="card-block">
+                      <h4 class="card-title"><%= item.title %></h4>
+                      <p class="card-text p-y-1">
+                        Some quick example text to build on the card title .
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
