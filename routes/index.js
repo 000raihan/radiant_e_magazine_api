@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+// const base_url = "http://localhost:6055"
 const base_url = "http://116.68.200.97:6055"
 
 const magazine_list = [
@@ -9,7 +10,7 @@ const magazine_list = [
     url:`${base_url}/magazine2022_february`,
     thumb:"images/2022_1/Cronical-11-01.jpg",
     title: "Chronicle",
-    sub_title: "February- April 2022"
+    sub_title: "February - April 2022"
   },
   {
     id:3,
@@ -17,6 +18,13 @@ const magazine_list = [
     thumb:"images/2022_2/CHRONICAL-12-01.jpg",
     title: "Chronicle",
     sub_title: "May - August 2022"
+  },
+  {
+    id:3,
+    url:`${base_url}/magazine2022_september`,
+    thumb:"images/2022_3/Chornical-13_page-0001.jpg",
+    title: "Chronicle",
+    sub_title: "September - November 2022"
   },
 ]
 
@@ -28,6 +36,9 @@ router.get('/magazine2022_february', function (req, res, next) {
 });
 router.get('/magazine2022_august', function (req, res, next) {
   res.render('magazine_details_august');
+});
+router.get('/magazine2022_september', function (req, res, next) {
+  res.render('magazine_details_september');
 });
 
 
